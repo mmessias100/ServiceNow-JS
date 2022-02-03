@@ -5,6 +5,8 @@ DOM.addButton.onclick = () => add(DOM.inputOne.value, DOM.inputTwo.value);
 DOM.subButton.onclick = () => sub(DOM.inputOne.value, DOM.inputTwo.value);
 DOM.divButton.onclick = () => div(DOM.inputOne.value, DOM.inputTwo.value);
 DOM.multButton.onclick = () => mult(DOM.inputOne.value, DOM.inputTwo.value);
+DOM.eqlButton.onclick = () => showAnswer(int);
+DOM.clearButton.onclick = () => clear();
 
 function showAnswer(int){
 
@@ -39,4 +41,10 @@ function mult (num1, num2){
     let result = 0;
     result = +num1 * +num2;
     showAnswer(result);
+}
+
+function clear(){
+    DOM.inputOne.value = "";
+    DOM.inputTwo.value = "";
+    document.getElementById(`list_output`).innerHTML = "";
 }

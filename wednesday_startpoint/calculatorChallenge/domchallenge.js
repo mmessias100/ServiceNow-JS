@@ -5,3 +5,5 @@ export const addButton = document.getElementById(`button_add`);
 export const subButton = document.getElementById(`button_subtract`);
 export const multButton = document.getElementById(`button_multiply`);
 export const divButton = document.getElementById(`button_divide`);
+export const eqlButton = document.getElementById(`button_equal`);
+export const clearButton = document.getElementById(`button_clear`);

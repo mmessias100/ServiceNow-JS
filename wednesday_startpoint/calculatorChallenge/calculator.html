@@ -10,6 +10,17 @@
       padding: 15px; 
       margin: auto; 
     }
+    .col {
+      flex: 1 0 0%;
+    }
+    .row *{
+      max-width: 100%;
+      padding-left: calc(var(--bs-gutter-x)*.5);
+      margin-top: var(--bs-gutter-y);
+      padding-top: 0.25rem;
+    }
+
+    
   </style>
 </head>
 <body>
@@ -38,6 +49,14 @@
         </div>
         <div class="col">
           <button id="button_divide" class="w-100 btn btn-lg btn-warning" type="button">/</button>
+        </div>
+        <div class="col">
+          <button id="button_equal" class="w-100 btn btn-lg btn-warning" 
+          style="background-color:rgb(93, 70, 148); border-color: white;" type="button">=</button>
+        </div>
+        <div class="col">
+          <button id="button_clear" class="w-100 btn btn-lg btn-warning" type="button" 
+          style="background-color:rgb(71, 114, 114); border-color: white;">AC</button>
         </div>
       </div>
 
